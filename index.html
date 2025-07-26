@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Yang - MSCS @ Brown | SDE Intern @ AWS Kiro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Charlie Yang</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-i18n="nav.home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link" data-i18n="nav.education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                </li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero.title">Hi, I'm Charlie Yang</h1>
+                <h2 class="hero-subtitle" data-i18n="hero.subtitle">MSCS @ Brown | SDE Intern @ AWS Kiro</h2>
+                <p class="hero-description" data-i18n="hero.description">
+                    Passionate about AI system development, Agentic AI, and Computer Vision for medical research. 
+                    Experienced in building Computer Vision Systems and developing Web Apps for healthcare applications.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.getInTouch">Get In Touch</a>
+                    <a href="#about" class="btn btn-secondary" data-i18n="hero.learnMore">Learn More</a>
+                </div>
+            </div>
+                            <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="assets/profile-avatar.jpeg" alt="Charlie Yang" />
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about.paragraph1">
+                        I'm a dedicated AI engineer and software developer currently pursuing my Master's degree in Computer Science at Brown University. 
+                        I have extensive experience in building Computer Vision Systems and developing Web Apps, 
+                        particularly focused on medical imaging and AI for healthcare applications.
+                    </p>
+                    <p data-i18n="about.paragraph2">
+                        My interests include AI system development, Agentic AI, Software Development, and LLM & Computer Vision for medical research. 
+                        I'm currently working on development of Agentic AI IDE at AWS Kiro, where I gained hands-on experience in LLM context management, 
+                        TypeScript & JavaScript development, and MCP. Besides my technical work, I'm also a Personal Trainer at Brown Nelson Fitness Center!
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p data-i18n="about.yearsExperience">Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p data-i18n="about.projectsCompleted">Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p data-i18n="about.technologies">Technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-i18n="experience.title">Experience</h2>
+            <div class="experience-scroll">
+                                        <div class="experience-card" onclick="openExperienceDetail('aws-kiro')">
+                    <div class="experience-header">
+                        <h3 data-i18n="experience.aws-kiro.title">Software Engineer Intern</h3>
+                        <h4 data-i18n="experience.aws-kiro.company">Amazon Web Services (AWS) - Kiro</h4>
+                        <div class="experience-meta">
+                            <span class="experience-date" data-i18n="experience.aws-kiro.date">Jun 2025 - Present</span>
+                            <span class="experience-location" data-i18n="experience.aws-kiro.location">Seattle, WA</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li data-i18n="experience.aws-kiro.bullet1">Led design and productization of context management system for Agentic AI IDE</li>
+                            <li data-i18n="experience.aws-kiro.bullet2">Developed modular framework combining hierarchical context compaction and RAG</li>
+                            <li data-i18n="experience.aws-kiro.bullet3">Integrated context system into production pipelines with LLM context management</li>
+                        </ul>
+                        <div class="experience-link" data-i18n="common.clickForDetails">Click for details →</div>
+                    </div>
+                </div>
+                
+                <div class="experience-card" onclick="openExperienceDetail('brown-health')">
+                    <div class="experience-header">
+                        <h3 data-i18n="experience.brown-health.title">Research Intern</h3>
+                        <h4 data-i18n="experience.brown-health.company">Brown University Health</h4>
+                        <div class="experience-meta">
+                            <span class="experience-date" data-i18n="experience.brown-health.date">Mar 2025 - Present</span>
+                            <span class="experience-location" data-i18n="experience.brown-health.location">Providence, RI</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li data-i18n="experience.brown-health.bullet1">Developing web-based platform for AI-generated medical reports</li>
+                            <li data-i18n="experience.brown-health.bullet2">Deployed VILA-M3 vision-language model for medical report generation</li>
+                            <li data-i18n="experience.brown-health.bullet3">Processed 10,000+ brain MRI images and developed automated preprocessing pipeline</li>
+                            <li data-i18n="experience.brown-health.bullet4">Deployed nnU-Net v2 for automated brain stroke lesion segmentation</li>
+                            <li data-i18n="experience.brown-health.bullet5">Built with Python (Flask), JavaScript, and real-time LLM inference</li>
+                        </ul>
+                        <div class="experience-link" data-i18n="common.clickForDetails">Click for details →</div>
+                    </div>
+                </div>
+                
+                <div class="experience-card" onclick="openExperienceDetail('rici')">
+                    <div class="experience-header">
+                        <h3 data-i18n="experience.rici.title">Lead Web Developer & Designer</h3>
+                        <h4 data-i18n="experience.rici.company">Rhode Island Coalition for Israel</h4>
+                        <div class="experience-meta">
+                            <span class="experience-date" data-i18n="experience.rici.date">Dec 2024 - Feb 2025</span>
+                            <span class="experience-location" data-i18n="experience.rici.location">Providence, RI</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li data-i18n="experience.rici.bullet1">Revamped RICI website with responsive design and interactive forms</li>
+                            <li data-i18n="experience.rici.bullet2">Integrated MailChimp for automated campaigns and user engagement</li>
+                            <li data-i18n="experience.rici.bullet3">Optimized UI/UX using Google Analytics and responsive design</li>
+                            <li data-i18n="experience.rici.bullet4">Collaborated with team members to deliver user-focused solutions</li>
+                        </ul>
+                        <div class="experience-link" data-i18n="common.clickForDetails">Click for details →</div>
+                    </div>
+                </div>
+                
+                <div class="experience-card" onclick="openExperienceDetail('shukun-tech')">
+                    <div class="experience-header">
+                        <h3 data-i18n="experience.shukun-tech.title">Algorithm Engineering Intern</h3>
+                        <h4 data-i18n="experience.shukun-tech.company">Shukun Technology Co., Ltd</h4>
+                        <div class="experience-meta">
+                            <span class="experience-date" data-i18n="experience.shukun-tech.date">May 2024 - Aug 2024</span>
+                            <span class="experience-location" data-i18n="experience.shukun-tech.location">Beijing, China</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li data-i18n="experience.shukun-tech.bullet1">Improved brain region segmentation and tumor detection for 5,000+ patients</li>
+                            <li data-i18n="experience.shukun-tech.bullet2">Constructed tree-structured data system for 3D brain region segmentation</li>
+                            <li data-i18n="experience.shukun-tech.bullet3">Processed 10,000+ MRI brain images from five major hospitals</li>
+                        </ul>
+                        <div class="experience-link" data-i18n="common.clickForDetails">Click for details →</div>
+                    </div>
+                </div>
+                
+                <div class="experience-card" onclick="openExperienceDetail('casia')">
+                    <div class="experience-header">
+                        <h3 data-i18n="experience.casia.title">Software and Machine Learning Engineer Intern</h3>
+                        <h4 data-i18n="experience.casia.company">Institute of Automation, Chinese Academy of Sciences</h4>
+                        <div class="experience-meta">
+                            <span class="experience-date" data-i18n="experience.casia.date">May 2023 - May 2024</span>
+                            <span class="experience-location" data-i18n="experience.casia.location">Beijing, China</span>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li data-i18n="experience.casia.bullet1">Obtained software patent and secured national grant for ICU monitoring</li>
+                            <li data-i18n="experience.casia.bullet2">Designed real-time patient monitoring system with hybrid algorithm</li>
+                            <li data-i18n="experience.casia.bullet3">Developed React-based web app for patient data visualization</li>
+                            <li data-i18n="experience.casia.bullet4">Built multi-modal HCI system for medical service robot with action recognition</li>
+                        </ul>
+                        <div class="experience-link" data-i18n="common.clickForDetails">Click for details →</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title" data-i18n="education.title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item" onclick="openEducationDetail('brown')">
+                    <div class="education-timeline-dot"></div>
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3 data-i18n="education.brown.degree">Master of Science in Computer Science</h3>
+                            <h4 data-i18n="education.brown.school">Brown University</h4>
+                            <p class="education-date" data-i18n="education.brown.date">Sep 2024 - May 2026</p>
+                            <p class="education-location" data-i18n="education.brown.location">Providence, Rhode Island, United States</p>
+                            <p class="education-summary" data-i18n="education.brown.summary">Currently pursuing advanced studies in computer science with focus on AI, machine learning, and software engineering.</p>
+                            <div class="education-link" data-i18n="common.clickForDetails">Click for details →</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-item" onclick="openEducationDetail('ustb')">
+                    <div class="education-timeline-dot"></div>
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3 data-i18n="education.ustb.degree">Bachelor of Engineering in Artificial Intelligence</h3>
+                            <h4 data-i18n="education.ustb.school">University of Science and Technology Beijing</h4>
+                            <p class="education-date" data-i18n="education.ustb.date">Sep 2020 - Jul 2024</p>
+                            <p class="education-location" data-i18n="education.ustb.location">Beijing, China</p>
+                            <p class="education-summary" data-i18n="education.ustb.summary">Graduated with honors (GPA: 3.83/4.0). Dean's Medal Recipient for outstanding academic performance, leadership, and significant contributions to university projects.</p>
+                            <div class="education-link" data-i18n="common.clickForDetails">Click for details →</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills.title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-i18n="skills.languages">Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">C/C++</span>
+                        <span class="skill-item">C#</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">TypeScript</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">HTML/CSS</span>
+                        <span class="skill-item">Go</span>
+                        <span class="skill-item">PHP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-i18n="skills.frameworks">Frameworks</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Vue</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Flask</span>
+                        <span class="skill-item">SpringBoot</span>
+                        <span class="skill-item">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-i18n="skills.developerTools">Developer Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Vite</span>
+                        <span class="skill-item">Google Cloud</span>
+                        <span class="skill-item">AWS</span>
+                        <span class="skill-item">VS Code</span>
+                        <span class="skill-item">PyCharm</span>
+                        <span class="skill-item">IntelliJ</span>
+                        <span class="skill-item">Figma</span>
+                        <span class="skill-item">Wix</span>
+                        <span class="skill-item">WordPress</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-i18n="skills.libraries">Libraries</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Pandas</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">Matplotlib</span>
+                        <span class="skill-item">PyTorch</span>
+                        <span class="skill-item">TensorFlow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-i18n="contact.subtitle">Let's Connect</h3>
+                    <p data-i18n="contact.description">I'm always interested in new opportunities and exciting projects. 
+                       Feel free to reach out if you'd like to collaborate or just say hello!</p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/xinye-charlie-yang-939674286/" class="contact-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Yangxinyee" class="contact-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:charlieyangxinye@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="tel:4014993747" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            <span>Phone</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2024 Charlie Yang. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 
