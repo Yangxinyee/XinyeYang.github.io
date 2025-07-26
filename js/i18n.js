@@ -12,7 +12,7 @@ const translations = {
         hero: {
             title: "Hi, I'm Charlie Yang",
             subtitle: "MSCS @ Brown | SDE Intern @ AWS Kiro",
-            description: "Passionate about AI system development, Agentic AI, and Computer Vision for medical research. Experienced in building Computer Vision Systems and developing Web Apps for healthcare applications.",
+            description: "Passionate about AI system development, Agentic AI, LLM application development, multimodal development, and Computer Vision for medical research. Currently working as an intern at Kiro, where I lead the development of context compaction functionality. Experienced in building Computer Vision Systems and developing Web Apps for healthcare applications.",
             getInTouch: "Get In Touch",
             learnMore: "Learn More"
         },
@@ -165,7 +165,7 @@ const translations = {
         hero: {
             title: "你好，我是杨新烨",
             subtitle: "布朗大学计算机科学硕士 | AWS Kiro 软件工程师实习生",
-            description: "热衷于AI系统开发、智能代理AI和医疗研究计算机视觉。在构建计算机视觉系统和开发医疗应用Web应用方面经验丰富。",
+            description: "热衷于AI系统开发、智能代理AI、LLM应用开发、多模态开发和医疗研究计算机视觉。作为Kiro组实习生，我负责上下文压缩功能开发。在构建计算机视觉系统和开发医疗应用Web应用方面经验丰富。",
             getInTouch: "联系我",
             learnMore: "了解更多"
         },
