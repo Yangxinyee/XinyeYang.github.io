@@ -4,7 +4,7 @@ This repository contains the source code for my personal website.
 
 ## 🌐 Live Website
 
-Visit my personal website: [Charlie Yang - Personal Website](https://yangxinyee.github.io/personal_website/)
+Visit my personal website: [Charlie Yang - Personal Website](https://yangxinyee.github.io)
 
 ## 🌍 Bilingual Support
 
